@@ -1,0 +1,144 @@
+$breakpoint-tablet: 555px;
+$breakpoint-mobileL: 425px;
+$breakpoint-mobileM: 375px;
+$breakpoint-mobileS: 320px;
+
+.App{
+    height: 100vh;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+
+    .nav{
+        color: #9BCDD2;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        
+        h1{
+            margin-left: 30px;
+        }
+        .addMember{
+            background-color: #9BCDD2;
+            border-color: #9BCDD2;
+            border-radius: 8px;
+            width: 150px;
+            height: 37px;
+            position: absolute;
+            top: 25px;
+            right: 10px;
+
+            
+
+        }
+        button:hover{
+            border-color: #9BCDD2;
+            color: #9BCDD2;
+            background-color: white;
+        }
+    }
+    .mid-container{
+        margin: 20px 20px;
+        
+        .card{
+            margin: 20px auto;
+
+            .team{
+            flex: 1;
+            display: flex;
+            background-color: #9BCDD2;
+            border-radius: 7px;
+            text-align: center;
+            gap: 70px;
+            flex-basis: 20px;
+            
+            
+                img{
+                    width: 80px;
+                    height: 100px;
+                }
+                button {
+                    padding: 3px 6px;
+                    background-color: white;
+                    border-color: white;
+                    cursor: pointer;
+                
+                }
+                .team-name{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+
+                    span{
+                        font-weight: 100;
+                        font-size: 10px
+                    }
+                }
+                p{
+                    margin: auto;
+                    color: white;
+                    font-size: small;
+                }
+                .delete , .update{
+                    margin: auto;
+                }
+                .delete{
+                    height: 30px;
+                    width: 70px;
+                    border-radius: 6px;
+                    background-color: white;
+                    border-width: 1px;
+                    border-color: white;
+                    margin-right: 10px;
+                }
+                .delete:hover{
+                    background-color: #F24C3D;
+                    border-color: #F24C3D;
+                    color: white;
+                }
+                .update{
+                    height: 30px;
+                    width: 70px;
+                    border-radius: 6px;
+                    background-color: white;
+                    border-width: 1px;
+                    border-color: white;
+                    margin-right: 10px;
+                }
+                .update:hover{
+                    background-color: #F2BE22;
+                    border-color: #F2BE22;
+                    color: white;
+                }
+            }
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1{
+            color: #9BCDD2;
+        }
+
+        input{
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #9BCDD2;
+        }
+        textarea{
+            padding: 10px;
+        }
+        button {
+            border: none;
+            padding: 10px;
+            background-color: #9BCDD2;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    
+    
+}
